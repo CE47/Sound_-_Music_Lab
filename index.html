@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101326">
+  <title>Sound &amp; Music Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Sound and Music Lab home"><span class="brand-mark">♫</span><span>sound<span class="brand-light">lab</span><small>DISCOVERY STUDIO</small></span></a>
+      <div class="nav-label">YOUR SOUND STUDIO</div>
+      <nav id="moduleNav" aria-label="Experiments"></nav>
+      <div class="sidebar-bottom"><div class="help-icon">?</div><div><strong>Curious minds</strong><small>Make some noise. Learn why.</small></div></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><div class="crumb"><span>STUDIO</span><i>›</i><b id="crumbName">String lab</b></div><div class="top-controls"><span class="sound-status"><i></i> SOUND ON</span><button class="icon-btn" id="muteBtn" aria-label="Mute sound" title="Mute sound">◖))</button><label class="master-volume" for="masterVol"><span>VOL</span><input id="masterVol" type="range" min="0" max="0.35" step="0.01" value="0.12" aria-label="Master volume"></label></div></header>
+      <section class="workspace">
+        <div class="welcome-row"><div><div class="eyebrow"><span class="spark">✦</span> HANDS-ON SOUND SCIENCE</div><h1 id="pageTitle">String lab</h1><p id="pageSubtitle">Pluck a string. Discover what makes a note high or low.</p></div><div class="level-chip"><span>✦</span> EXPERIMENT <b id="moduleNumber">01</b> <small>/ 12</small></div></div>
+        <div class="studio-grid">
+          <section class="experiment-card" aria-live="polite"><div class="card-head"><div><span class="mini-label">BUILD • TWEAK • LISTEN</span><h2 id="expTitle">Tune your string</h2></div><span class="live-pill"><i></i> LIVE</span></div><div id="experiment"></div></section>
+          <section class="visual-card"><div class="card-head visual-head"><div><span class="mini-label">YOUR SOUND, MADE VISIBLE</span><h2>Wave window</h2></div><span class="wave-tag"><i></i> <b id="waveHz">220</b> Hz</span></div><div class="canvas-wrap"><canvas id="waveCanvas" aria-label="Animated waveform visualization"></canvas><div class="canvas-overlay"><span>← time →</span><span>↑ air movement</span></div></div><div class="wave-legend"><span><i class="legend-dot cyan"></i> Your sound wave</span><span id="waveNote">A3 · 220 Hz</span></div><div class="play-row"><button class="play-btn" id="playBtn"><span>▶</span> Play sound</button><div class="play-hint">Try it, then watch the wave</div></div></section>
+        </div>
+        <div class="insight-row"><div class="insight-icon">✦</div><div><span class="mini-label">SCIENCE SNAPSHOT</span><p id="insightText">A shorter, tighter string vibrates faster. Faster vibrations make a higher pitch.</p></div><div class="fact-stamp">SOUND<br>SCIENCE</div></div>
+        <footer><span>BUILT FOR BIG QUESTIONS <b>✦</b></span><span>Explore safely · Keep volume comfy</span></footer>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
